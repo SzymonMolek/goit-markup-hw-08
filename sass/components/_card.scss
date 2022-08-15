@@ -1,0 +1,75 @@
+.card
+{
+    &__switch{
+    position: relative;
+    height: 600px;
+    background: var(--body-color);
+
+        &:after 
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        button 
+        {
+            display: block;
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 4px;
+            background: var(--bg-color);
+            font-weight: 700;
+            font-size: var(--font-size16);
+            line-height: 1.87;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: var(--switch-layer);
+            margin: auto;
+            cursor: pointer;
+            transition-duration: 500ms;
+
+            &:hover,
+            &:focus 
+            {
+                background-color: var(--bg-color-2);
+                color: var(--bg-color);
+                transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+                outline: none;
+            }
+        }
+        
+    }
+    #card__area 
+    {
+        display: block;
+        background-color: #2F303A;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/people.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1600px;
+        margin: auto;
+    }
+    &__sentence 
+    {
+        font-weight: 900;
+        font-size: 44px;
+        color: var(--switch-layer);
+    
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+    
+        width: 696px;
+        margin: auto;
+        padding-top: 200px;
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,59 @@
+.content
+{
+    .our-profile 
+    {
+        width: 100%;
+        padding-top: 94px;
+
+        &__details 
+        {
+            list-style: none;
+        }
+        &__detail {
+            display: inline-block;
+
+            &:not(:last-child) 
+            {
+                margin-right: 30px;
+            }
+
+        }
+        &__box 
+        {
+            width: 270px;
+            background: var(--fill);
+            border-radius: 0px 0px 4px 4px;
+        }
+        &__iconbox 
+        {
+        
+            display: flex;
+            width: 270px;
+            height: 120px;
+            background: var(--bg-color-2);
+            border-radius: 4px;
+        
+            margin-bottom: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title 
+        {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin: 0;
+            color: #2f303a;
+        }
+        &__content 
+        {
+            color: var(--top-contact-us);
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+        }
+    }
+}

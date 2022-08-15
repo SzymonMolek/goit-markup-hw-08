@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after 
+{
+    box-sizing: border-box;
+}
+
+ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: "Roboto", sans-serif;
+    color: var(--body-color);
+    margin: 0px;
+    padding: 0px;
+}
+
+.container 
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section 
+{
+    padding: 94px 0;
+}
+
+ul 
+{
+    margin: 0;
+    padding: 0;
+}
