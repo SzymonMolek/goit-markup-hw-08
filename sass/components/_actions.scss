@@ -1,53 +1,57 @@
-.content
+@media (min-width: 1200px)
 {
-    .actions 
+        .content
     {
-        width: 100%;
-    h2 
-    {
-        color: #212121;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin: 0;
-        padding-bottom: 50px;
-    }
-    &__img-list 
-    {
-        height: 294px;
-        display: flex;
-        justify-content: left;
-        gap: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    &__img-list-content 
-    {
-        mix-blend-mode: normal;
-        display: block;
-        position: relative;
+        .actions 
+        {
+            max-width: 1200px;
+            margin: 0 auto;
 
-    &>.actions__lable 
-    {
-        position: absolute;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 27px 90px;
-        color: var(--fill);
-        background: rgba(47, 48, 58, 0.8);
-        align-items: flex-end;
-        margin: 0;
+            h2 
+            {
+                color: #212121;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.16;
+                text-align: center;
+                letter-spacing: 0.03em;
+                margin: 0;
+                padding-bottom: 50px;
+            }
+            &__img-list 
+            {
+                height: 294px;
+                display: flex;
+                justify-content: left;
+                gap: 30px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            &__img-list-content 
+            {
+                    mix-blend-mode: normal;
+                    display: block;
+                    position: relative;
+
+                &>.actions__lable 
+                {
+                    position: absolute;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 27px 90px;
+                    color: var(--fill);
+                    background: rgba(47, 48, 58, 0.8);
+                    align-items: flex-end;
+                    margin: 0;
+                }
+            }
         }
     }
-
-}
 }

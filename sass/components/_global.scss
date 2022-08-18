@@ -14,15 +14,70 @@ ul
 body 
 {
     font-family: "Roboto", sans-serif;
-    color: var(--body-color);
+    // color: var(--body-color);
     margin: 0px;
     padding: 0px;
+
+    @media only screen and (max-device-width: 320px)
+    {
+        overflow-x: scroll;
+        margin: auto;
+    }
+
+    @media only screen and (max-device-width: 480px) 
+    {
+        max-width: 480px;
+        background-color: green;
+        margin: auto;
+    }
+    
+    
+    @media screen and (min-device-width: 481px) and (max-device-width: 768px) 
+    {
+        max-width: 768px;
+        background-color: orange;
+        margin: auto;
+    }
+
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 1200px) 
+    {
+        max-width: 1200px;
+        background-color: red;
+        margin: auto;
+    }
 }
 
 .container 
 {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+
+        @media only screen and (max-device-width: 320px) 
+        {
+            overflow-x: scroll;
+            margin: auto;
+        }
+
+        @media only screen and (max-device-width: 480px) {
+            max-width: 480px;
+            background-color: green;
+            margin: auto;
+        }
+    
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            max-width: 768px;
+            background-color: orange;
+            margin: auto;
+        }
+    
+
+        @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+            max-width: 1200px;
+            background-color: red;
+            margin: auto;
+        }
 }
 
 .section 

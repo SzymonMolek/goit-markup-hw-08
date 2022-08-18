@@ -1,7 +1,10 @@
-.team 
+@media (min-width: 1200px) 
+{
+    .team 
     {
         background-color: #f5f4fa;
-        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
 
         &__join-us:focus 
         {
@@ -102,3 +105,4 @@
             }
         }
     }
+}
