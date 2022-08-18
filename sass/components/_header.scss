@@ -4,22 +4,18 @@
     height: 80px;
     margin: auto;
 
-    // Header - całkowita wysokość diva mobile:
-    @media only screen and (max-device-width: 480px) 
-    {
+    @media only screen and (max-device-width: 480px) {
         max-width: 480px;
         height: 60px;
         margin: auto;
     }
 
-    // Header - całkowita wysokość diva tablet:
     @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
         max-width: 768px;
         height: 80px;
         margin: auto;
     }
 
-    // Header - całkowita wysokość diva desktop:
     @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
         max-width: 1600px;
         height: 80px;
@@ -38,28 +34,26 @@
         @media only screen and (max-device-width: 480px) {
             max-width: 480px;
             height: 60px;
-            margin: auto;
+            // margin: auto;
         }
-    
+
         // Header - całkowita wysokość diva tablet:
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
             max-width: 768px;
             height: 80px;
-            margin: auto;
+            // margin: auto;
+
         }
-    
+
         // Header - całkowita wysokość diva desktop:
         @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
             max-width: 1600px;
             height: 80px;
-            margin: auto;
+            // margin: auto;
         }
     }
-    // approved
 
-
-    &__main-logo 
-    {
+    &__main-logo {
         font-family: "Raleway", sans-serif;
         font-size: 26px;
         font-style: normal;
@@ -68,15 +62,15 @@
         letter-spacing: 0.03em;
 
         // OFFSET GŁÓWNEGO LOGA OD KRAWĘDZI
-        @media only screen and (max-device-width: 480px) 
-        {
+        @media only screen and (max-device-width: 480px) {
             padding-left: 15px;
+            font-size: 24px;
         }
-        
-        @media screen and (min-device-width: 481px) and (max-device-width: 768px) 
-        {
+
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
             padding-left: 15px;
-            padding-right: 83px;
+            // padding-right: 83px;
+            font-size: 24px;
         }
 
         a {
@@ -110,32 +104,33 @@
         }
     }
 
-    // dodać klasę paska wyboru
-    // &__nav 
-    // {
-    // }
+
+    &__nav {
+
+        // min. szerokość agencja - portfolio - kontakt:
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            display: inline-block;
+            min-width: 282px;
+        }
+    }
 
     &__topbar-menu {
         list-style-type: none;
         margin: 0px;
 
-        @media only screen and (max-device-width: 480px) 
-        {
+        @media only screen and (max-device-width: 480px) {
             display: none;
         }
 
-        // min. szerokość agencja - portfoli - kontakt:
-        @media screen and (min-device-width: 481px) and (max-device-width: 768px) 
-        {
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
             min-width: 282px;
         }
 
         li {
             display: inline-block;
 
-            &:not(:last-child) 
-            {
-                margin-right: 46px;
+            &:not(:last-child) {
+                margin-right: 58px;
             }
 
             a {
@@ -160,6 +155,11 @@
         position: relative;
         transition-duration: 500ms;
 
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            display: inline;
+            padding: 5px 0 5px 0;
+        }
+
         &:hover,
         &:focus {
             color: var(--bg-color);
@@ -175,14 +175,12 @@
         list-style: none;
         padding-left: 364px;
 
-        @media only screen and (max-device-width: 480px) 
-        {
+        @media only screen and (max-device-width: 480px) {
             display: none;
         }
 
-        @media screen and (min-device-width: 481px) and (max-device-width: 768px) 
-        {
-            padding-left: 101px;
+        @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            padding-left: 0;
             padding-right: 15px;
         }
 
@@ -196,7 +194,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
+            @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+                justify-content: flex-start;
+            }
 
             &:hover,
             &:focus {
@@ -212,8 +213,8 @@
             &:last-child {
                 padding-left: 50px;
 
-                @media screen and (min-device-width: 481px) and (max-device-width: 768px) 
-                {
+                @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+                    display: inline;
                     padding-left: 0;
                 }
             }
@@ -232,8 +233,7 @@
     }
 
     &__icon-mail,
-    &__icon-phone 
-    {
+    &__icon-phone {
         display: inline-flex;
         margin-right: 10px;
     }

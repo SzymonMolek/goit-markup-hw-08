@@ -54,21 +54,18 @@
   .header__topbar-contain {
     max-width: 480px;
     height: 60px;
-    margin: auto;
   }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .header__topbar-contain {
     max-width: 768px;
     height: 80px;
-    margin: auto;
   }
 }
 @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
   .header__topbar-contain {
     max-width: 1600px;
     height: 80px;
-    margin: auto;
   }
 }
 .header__main-logo {
@@ -82,12 +79,13 @@
 @media only screen and (max-device-width: 480px) {
   .header__main-logo {
     padding-left: 15px;
+    font-size: 24px;
   }
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .header__main-logo {
     padding-left: 15px;
-    padding-right: 83px;
+    font-size: 24px;
   }
 }
 .header__main-logo a {
@@ -113,6 +111,12 @@
   top: 44px;
   left: 0px;
 }
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .header__nav {
+    display: inline-block;
+    min-width: 282px;
+  }
+}
 .header__topbar-menu {
   list-style-type: none;
   margin: 0px;
@@ -131,7 +135,7 @@
   display: inline-block;
 }
 .header__topbar-menu li:not(:last-child) {
-  margin-right: 46px;
+  margin-right: 58px;
 }
 .header__topbar-menu li a {
   font-weight: 500;
@@ -149,6 +153,12 @@
 .header__link {
   position: relative;
   transition-duration: 500ms;
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .header__link {
+    display: inline;
+    padding: 5px 0 5px 0;
+  }
 }
 .header__link:hover, .header__link:focus {
   color: var(--bg-color);
@@ -169,7 +179,7 @@
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .header__contact-us {
-    padding-left: 101px;
+    padding-left: 0;
     padding-right: 15px;
   }
 }
@@ -184,6 +194,11 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .header__contact-us a {
+    justify-content: flex-start;
+  }
+}
 .header__contact-us a:hover, .header__contact-us a:focus {
   color: var(--top-hover-focus);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -197,6 +212,7 @@
 }
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .header__contact-us li:last-child {
+    display: inline;
     padding-left: 0;
   }
 }
