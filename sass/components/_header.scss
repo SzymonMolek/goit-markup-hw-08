@@ -5,7 +5,7 @@
     margin: auto;
 
     @media only screen and (max-device-width: 480px) {
-        max-width: 480px;
+        max-width: 450px;
         height: 60px;
         margin: auto;
     }
@@ -32,17 +32,15 @@
 
         // Topbar - całkowita wysokość diva mobile:
         @media only screen and (max-device-width: 480px) {
-            max-width: 480px;
+            max-width: 450px;
             height: 60px;
-            // margin: auto;
+            margin: auto;
         }
 
         // Header - całkowita wysokość diva tablet:
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
             max-width: 768px;
             height: 80px;
-            // margin: auto;
-
         }
 
         // Header - całkowita wysokość diva desktop:
@@ -71,6 +69,10 @@
             padding-left: 15px;
             // padding-right: 83px;
             font-size: 24px;
+        }
+
+        @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+            padding-left: 15px;
         }
 
         a {
@@ -120,6 +122,7 @@
 
         @media only screen and (max-device-width: 480px) {
             display: none;
+            margin: auto;
         }
 
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -180,6 +183,11 @@
         }
 
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
             padding-left: 0;
             padding-right: 15px;
         }

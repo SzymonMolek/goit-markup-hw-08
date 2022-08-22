@@ -24,22 +24,19 @@ body
     }
 
     @media only screen and (max-device-width: 480px) {
-        max-width: 480px;
-        background-color: green;
+        max-width: 450px;
         margin: auto;
     }
     
     
     @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-        max-width: 768px;
-        background-color: orange;
+        max-width: 738px;
         margin: auto;
     }
 
 
     @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
         max-width: 1200px;
-        background-color: red;
         margin: auto;
     }
 }
@@ -47,7 +44,7 @@ body
 .container 
 {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 
         @media only screen and (max-device-width: 320px) 
         {
@@ -56,14 +53,14 @@ body
         }
 
         @media only screen and (max-device-width: 480px) {
-            max-width: 480px;
+            max-width: 450px;
             background-color: green;
             margin: auto;
         }
     
 
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-            max-width: 768px;
+            max-width: 738px;
             background-color: orange;
             margin: auto;
         }
