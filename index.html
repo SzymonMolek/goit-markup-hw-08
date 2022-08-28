@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css"/>
 
     <title>WebStudio</title>
 
@@ -29,6 +29,32 @@
               <a class="header__link" href="index.html"><span>Web</span>Studio</a>
             </h2>
             <nav class="header__nav">
+
+              <!-- BURGER MENU -->
+
+              <div class="burger area">
+                <div class="burger__container">
+                    <input class="burger__checkbox" type="checkbox" name="" id="" />
+                    <div class="burger__lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                  <div class="burger__items">
+                    <li><a class="burger-text" href="index.html">Agencja</a></li>
+                    <li><a class="burger-text" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="burger-text" href="#">Kontakt</a></li>
+                    <li><a class="burger-phone" href="tel:+48111111111">+48 111 111 111</a></li>
+                    <li><a class="burger-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <div>
+                    <li class="burger-social">Instagram</li>
+                    <li class="burger-social">Twitter</li>
+                    <li class="burger-social">Facebook</li>
+                    <li class="burger-social">Linkedin</li></div>
+                  </div>
+                </div>
+              </div>
+
               <ul class="header__topbar-menu">
                 <li>
                   <a class="header__link header__link--active" href="index.html">Agencja</a>
@@ -69,7 +95,7 @@
 
     <!-- START OF CARD -->
 
-    <!-- <main class="content card">
+    <main class="content card">
       <section id="card__area" class="card__switch card__layer">
         <div class="card__container">
           <h1 class="card__sentence">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -77,12 +103,12 @@
         </div>
       </section>
 
-     END OF CARD -->
+    <!-- END OF CARD -->
 
 
       <!-- START OF OUR-PROFILE -->
 
-      <!-- <section id="our-profile__area" class="our-profile">
+      <section id="our-profile__area" class="our-profile">
         <div class="container">
           <ul class="our-profile__details">
             <li class="our-profile__detail">
@@ -143,14 +169,14 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- END OF OUR-PROFILE -->
 
 
       <!-- START OF OUR ACTIONS -->
 
-      <!-- <section id="actions__area" class="actions section">
+      <section id="actions__area" class="actions section">
         <div class="container">
           <h2>Czym się zajmujemy</h2>
           <ul class="actions__img-list">
@@ -186,20 +212,20 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- END OF OUR ACTIONS -->
 
 
       <!-- START OF OUR-TEAM -->
-<!-- 
+
       <section id="team__area" class="team section">
         <div class="container">
           <h2>Nasz zespół</h2>
           <ul class="team__details">
             <li class="team__detail">
               <div class="team__box">
-                <img
+                <img class="team__photo"
                   src="images/persondesigner.jpg"
                   alt="Product designer"
                   width="270"
@@ -243,7 +269,7 @@
             </li>
             <li class="team__detail">
               <div class="team__box">
-                <img
+                <img class="team__photo"
                   src="images/personfrontend.jpg"
                   alt="Frontend developer"
                   width="270"
@@ -287,7 +313,7 @@
             </li>
             <li class="team__detail">
               <div class="team__box">
-                <img src="images/personmarketing.jpg" alt="Marketing" width="270" height="260" />
+                <img class="team__photo" src="images/personmarketing.jpg" alt="Marketing" width="270" height="260" />
                 <p class="team__name">John Doe</p>
                 <p class="team__position">Marketing</p>
                 <div class="team__socialMedia">
@@ -326,7 +352,7 @@
             </li>
             <li class="team__detail">
               <div class="team__box">
-                <img src="images/personui.jpg" alt="UI designer" width="270" height="260" />
+                <img class="team__photo" src="images/personui.jpg" alt="UI designer" width="270" height="260" />
                 <p class="team__name">John Doe</p>
                 <p class="team__position">UI Designer</p>
                 <div class="team__socialMedia">
@@ -364,14 +390,14 @@
               </div>
             </li>
           </ul>
-        </div> -->
+        </div>
 
       <!-- END OF OUR-TEAM -->
 
 
       <!-- START OF OUR-CLIENTS -->
 
-      <!-- </section>
+      </section>
 
       <section id="clients__area" class="clients section">
         <div class="container">
@@ -422,7 +448,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- END OF OUR-CLIENTS -->
 
@@ -516,7 +542,7 @@
 
     <!-- START OF BACKDROP -->
 
-    <!-- <div class="backdrop__container">
+    <div class="backdrop__container">
       <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="backdrop__modal">
           <button 
@@ -583,10 +609,44 @@
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- END  -->
 
+    <!-- BURGER MENU-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <!-- MODAL-BACKDROP SCRIPT -->
 
