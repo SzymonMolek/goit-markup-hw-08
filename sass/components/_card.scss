@@ -4,6 +4,7 @@
     position: relative;
     height: 600px;
     background: var(--body-color);
+    z-index: -10;
 
         &:after 
         {
